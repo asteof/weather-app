@@ -1,0 +1,157 @@
+* {
+    font-family: 'Helvetica', sans-serif;
+    outline: none;
+}
+
+body {
+    font-size: calc(14px + 0.3vw + 0.3vh);
+    background-color: #222222;
+    color: #ddd;
+    margin: 0;
+    overflow: hidden;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24vh;
+    border-bottom: 1px solid #313131;
+    box-sizing: border-box;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 4em;
+    flex: 2;
+    max-width: 60vw;
+}
+
+input {
+    font-size: inherit;
+    text-overflow: ellipsis;
+    padding: 0.2em;
+    margin: 0 2em;
+    overflow: hidden;
+    background-color: inherit;
+    color: inherit;
+    border: 0;
+    border-bottom: 3px solid;
+    border-radius: 0 0 0 10px;
+    border-image: linear-gradient(to right, #ffa700, #222222 98%) 1;
+    flex: 2 260px;
+
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    background-color: #222222;
+    color: inherit;
+}
+
+button {
+    font-size: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4em 1.4em;
+    border-radius: 12px;
+    border: 0;
+    color: #bbbbbb;
+    background-color: #323232;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #181818;
+    color: #ddd;
+}
+
+button:hover .icon {
+    opacity: 0.9;
+}
+
+button:active {
+    background-color: #2d2d2d;
+    color: #ffa700
+}
+
+.icon {
+    width: 28px;
+    padding: 0 0 0 0.5em;
+    height: auto;
+    opacity: 0.5;
+}
+
+.output-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 76vh;
+    width: 100%;
+    padding: 4em;
+    box-sizing: border-box;
+}
+
+.output {
+    flex: 2;
+    /*max-width: 60vw;*/
+}
+
+.output + p {
+    font-size: 10px;
+}
+
+.city-info {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.city-info span {
+    display: inline-flex;
+    align-items: center;
+    color: #ffa700;
+}
+
+.city-info span img{
+    height: 0.6em;
+    width: auto;
+    padding: 0.4em;
+}
+
+.observe-time {
+    color: #ffd4a0;
+    font-size: 0.8em;
+    text-align: right;
+    padding: 0 0 2.4em 0;
+}
+
+.conditions-wrap {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 0.2em 2em;
+}
+
+.conditions-wrap div:nth-of-type(n) {
+    grid-column: 1/2;
+}
+
+.conditions-wrap div:nth-of-type(2n) {
+    grid-column: 2/3;
+}
+
+.conditions-wrap div span {
+    color: #ffd4a0;
+}
+
+.error {
+    padding: 0.6em 8em;
+    background-color: rgba(132, 0, 0, 0.6);
+    border-radius: 14px;
+}
