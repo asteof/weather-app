@@ -100,6 +100,7 @@ button:active {
 }
 
 .output {
+    display: none;
     flex: 2;
     /*max-width: 60vw;*/
 }
@@ -151,6 +152,11 @@ button:active {
 }
 
 .error {
+    display: none;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 30%;
+    left: 50%;
     padding: 0.6em 8em;
     background-color: rgba(132, 0, 0, 0.6);
     border-radius: 14px;
