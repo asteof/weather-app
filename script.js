@@ -29,7 +29,7 @@ const getWeatherByCity = () => {
 
                 const infoArray = createContainers(data);
                 infoArray.forEach(el => mainInfo.appendChild(el));
-
+                outputContainer.style.display = 'block'
             })
             .catch(error => {
                 console.log(error);
